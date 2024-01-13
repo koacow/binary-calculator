@@ -73,25 +73,32 @@ function evaluate(operation){
 
   const firstOperand = firstOperandForm.value;
   const secondOperand = secondOperandForm.value;
-
+  
+  let output = 0;
   if (isValidInput(firstOperand) && isValidInput(secondOperand)){
     switch(operation){
       case 'add':
-        console.log(add(firstOperand,secondOperand));
+        output = add(firstOperand,secondOperand);
         break;
       case 'multiply':
-        console.log(multiply(firstOperand,secondOperand));
+        output = multiply(firstOperand,secondOperand);
         break;
       case 'subtract':
-        console.log(subtract(firstOperand,secondOperand));
+        output = subtract(firstOperand,secondOperand);
         break;
       case 'divide':
-        console.log(divide(firstOperand,secondOperand));
+        output  = divide(firstOperand,secondOperand);
         break;
     }
+    displayOutput(output);
   } else{
     alert('Invalid inputs. Inputs must be bit strings');
   }
+}
+
+function displayOutput(output){
+  const resultText = document.querySelector('#result-text');
+  resultText.textContent = output;
 }
 
 const operatorButtons = document.querySelectorAll('button');

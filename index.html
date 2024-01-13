@@ -8,20 +8,62 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="user-inputs">
-        <form class="operand-input">
-            <input type="text" id="first-operand">
-        </form>
-        <form class="operand-input">
-            <input type="text" id="second-operand">
-        </form>
+    <h1 class="title">Binary Number Calculator</h1>
+    <div class="function-container">
+        <div class="user-inputs">
+            <div class="first-operand-form">
+                <label for="first-operand">First Number</label>
+                <form class="operand-input">
+                <input type="text" id="first-operand">
+                </form>
+            </div>
+            <div class="second-operand-form">
+                <label for="second-operand">Second Number</label>
+                <form class="operand-input">
+                <input type="text" id="second-operand">
+                </form>
+            </div>
+            <div class="result">Result
+                <p id="result-text"></p>
+            </div>
+        </div>
+        <div class="operations">
+            <button id="add">+</button>
+            <button id="subtract">-</button>
+            <button id="multiply">x</button>
+            <button id="divide">/</button>
+        </div>
     </div>
-    <div class="operations">
-        <button id="add">+</button>
-        <button id="subtract">-</button>
-        <button id="multiply">x</button>
-        <button id="divide">/</button>
+    <h1 class="title">Binary Number Converter</h1>
+    <div class="function-container">
+        <div class="user-inputs">
+            <div class="binary-to-decimal">
+                <div class="binary-to-decimal-form">
+                    <label for="binary-to-convert">Binary Number</label>
+                    <form class="input">
+                    <input type="text" id="binary-to-convert">
+                    </form>
+                </div>
+                <div class="result">
+                    <p id="binary-to-decimal-result-text">Result: </p>
+                </div>
+            </div>
+            <div class="decimal-to-binary">
+                <div class="decimal-to-binary-form">
+                    <label for="decimal-to-convert">Decimal Number</label>
+                    <form class="input">
+                    <input type="text" id="decimal-to-convert">
+                    </form>
+                </div>
+                <div class="result">
+                    <p id="decimal-to-binary-result-text">Result: </p>
+                </div>
+            </div>
+        </div>
+        <div class="convert-buttons">
+            <button class="convert">Convert</button>
+            <button class="convert">Convert</button>
+        </div>
     </div>
-    <div class="result">Result</div>
 </body>
 </html>

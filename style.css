@@ -1,3 +1,29 @@
-.body{
-    
+.function-container{
+    display: flex;
+    justify-content: center;
+}
+.operations{
+    display: flex;
+    flex-direction: column;
+}
+
+.convert-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.user-inputs{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.title{
+    text-align: center;
 }
